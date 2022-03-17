@@ -1,0 +1,124 @@
+/*
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 18em;
+  padding: 1.5em 1.5em 1em 1.5em;
+  border-radius: 1em;
+}
+
+.card-image img {
+  width: 18em;
+  border-radius: 1em;
+}
+
+.details_description p {
+    color: hsl(215, 51%, 70%);
+}
+
+.details_description h1 {
+    font-size: 1.5em;
+}
+
+.details_description h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.eth::before {
+  content: '';
+  background-image: url(images/icon-ethereum.svg);
+  height: 18px;
+  width: 11px;
+  float:left;
+  display: block;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.price_and_expiry {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.expiration {
+    color: hsl(215, 51%, 70%);
+}
+
+.expiration::before {
+    content: '';
+    background-image: url(images/icon-clock.svg);
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.author-image {
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.author img {
+    width: 30px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    border-top: solid hsl(215, 51%, 70%) 1px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.author p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 15px;
+}
+
+.author span {
+    color: white;
+}
+
+.author span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+
