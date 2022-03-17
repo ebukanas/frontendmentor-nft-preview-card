@@ -38,7 +38,23 @@ body {
 
 .card-image img {
   width: 18em;
+  height: 18em;
   border-radius: 1em;
+  display: inline-block;
+}
+
+.overlayinn {
+    background-color: rgba(0, 182, 158, 0.7);
+    opacity: 0;
+    height: 18em;
+    width: 18em;
+    border-radius: 1em;
+    position: absolute;
+    top:0;
+}
+
+.overlayinn:hover {
+    opacity: 1;
 }
 
 .details_description p {
@@ -120,5 +136,7 @@ body {
 .author span:hover {
   color: hsl(178, 100%, 50%);
 }
+
+
 
 
